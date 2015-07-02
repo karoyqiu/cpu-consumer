@@ -5,7 +5,7 @@ PROJECT(cpu-consumer)
 SET(Boost_USE_STATIC_LIBS        ON) # only find static libs
 SET(Boost_USE_MULTITHREADED      ON)
 SET(Boost_USE_STATIC_RUNTIME    OFF)
-FIND_PACKAGE(Boost 1.56 COMPONENTS thread)
+FIND_PACKAGE(Boost 1.56 COMPONENTS thread date_time system chrono)
 FIND_PACKAGE(OpenMP)
 
 SET(TARGET_NAME cpu-consumer)
